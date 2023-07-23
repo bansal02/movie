@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <title>Movie List Application</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -24,26 +24,11 @@
       <h2 id="movieTitle"></h2>
       <div class="movie-details">
         <div>
-          <img id="moviePoster" src="" alt="Movie Poster">
+          <img id="moviePoster" src="">
         </div>
         <div id="movieInfo"></div>
       </div>
-      <div class="user-rating">
-        <h3>Rate this movie:</h3>
-        <div class="stars" onclick="rateMovie(event)">
-          <span class="star" data-rating="1">&#9733;</span>
-          <span class="star" data-rating="2">&#9733;</span>
-          <span class="star" data-rating="3">&#9733;</span>
-          <span class="star" data-rating="4">&#9733;</span>
-          <span class="star" data-rating="5">&#9733;</span>
-        </div>
-      </div>
-      <div class="user-comment">
-        <h3>Leave a comment:</h3>
-        <textarea id="userComment" rows="4" placeholder="Write your comment here..."></textarea>
-        <button onclick="saveComment()">Save</button>
-      </div>
-      <div class="comments" id="commentsContainer"></div>
+      <div id="ratingComment"></div>
     </div>
   </div>
 
